@@ -60,7 +60,9 @@ if (typeof document !== 'undefined') {
             }
         }
         numDisplay.innerHTML = `<h1>${primeArr}</h1>`;
-        alert("Calculations finished");
+        setTimeout(() => {
+            alert("Calculations finished");
+          }, "1000");
         return primeArr
     }
     displayPrimes(24)
