@@ -34,3 +34,12 @@ const flattenArray = (arr) => {
 }
 
 console.log(helper(flattenArray(anarray)))
+
+//Part 3
+let numDisplay = document.createElement("h1")
+function displayPrimes(num){
+    let primeArr = []
+    while (num != 0){
+        
+    }
+}
