@@ -15,6 +15,7 @@ let anarray = [1,2,3,4,4,[1,2,3,4,5,[1,2,3,4,5,5,[1,2,3,4,24,[1,2,3,42],1],23],3
 
 // console.log("This is still running after crashing")
 
+//Part 2: Trampolines
 function helper(hfunction) {
     let thunk = hfunction();
     while (typeof(thunk) === 'function') {
