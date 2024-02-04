@@ -36,10 +36,27 @@ const flattenArray = (arr) => {
 console.log(helper(flattenArray(anarray)))
 
 //Part 3
-let numDisplay = document.createElement("h1")
+// let numDisplay = document.createElement("h1")
 function displayPrimes(num){
     let primeArr = []
-    while (num != 0){
-        
+    let checkNum = num;
+    let notPrime = false;
+    while (checkNum != 1){
+        for (let i = 2; i < checkNum; i++) {
+            if (checkNum % i == 0) {
+                checkNum -= 1;
+                notPrime = true;
+                break;
+            }
+        }
+        if(notPrime == true){
+            notPrime = false;
+        } else {
+            primeArr.unshift(checkNum)
+            checkNum -= 1;
+        }
     }
+    console.log(primeArr)
+    return primeArr
 }
+displayPrimes(24)
